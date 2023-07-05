@@ -1,0 +1,106 @@
+html {
+    background-color: rgb(13, 14, 13);
+    font-size: 17px;
+    color:white;
+  }
+body{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+h1{
+    text-align : center;
+    border: 5px solid rgb(245, 241, 241);
+    border-radius: 20px;
+    background-color: rgb(250, 249, 249);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+  }
+h2{
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:500;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid: auto auto auto auto / auto auto auto auto ;
+    /* grid-template-columns: auto auto auto auto;  repeat(2, minmax(auto, auto)); */
+    grid-gap: 5px;
+    background-color: orange;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: black;
+    font-family:'Open Sans', sans-serif;
+    font-weight:300;
+    align-content: center;
+    margin: 10px;
+}
+
+.container > div {
+  background-color: black;
+  padding: 5px;
+  color: white;
+}
+
+
+.cellcontainer{
+  align-content: center;
+  vertical-align: middle;
+}
+/*@media (min-width: 30em) {*/
+img{
+    padding: 14px;
+} 
+
+.fieldHeadings{
+    color:white;
+    /* padding: calc(10% - 100px); */
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    vertical-align:middle;
+}
+/*}*/
+
+.button {
+  border: none;
+  color: rgb(14, 13, 13);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-container{
+  text-align: center;  
+  /* border: white solid 2px; */
+}
+
+.fieldset{
+  /* padding: calc(10% - 100px); */
+  width: 100%;
+  display: grid;
+  grid: auto auto / auto auto auto auto;
+  grid-gap: 30px;
+  padding: 10px;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+}
+
+.footer{
+  text-align : center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: small;
+}
+.footer > p{
+  line-height:2px;
+}
+/* test */

@@ -1,0 +1,116 @@
+html {
+    background-color: rgb(13, 14, 13);
+    font-size: 17px;
+    color:white;
+  }
+body{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+h1{
+    text-align : center;
+    border: 5px solid rgb(245, 241, 241);
+    border-radius: 20px;
+    background-color: rgb(250, 249, 249);
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+  }
+h2{
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:500;
+}
+.container{
+    width: 100%;
+    background-color: black;
+    font-family:'Open Sans', sans-serif;
+    font-weight:300;
+    margin-top: 10px;
+    border: 2px white solid;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.cellcontainer{
+  float: left;
+  width: 49.7%;
+  border-bottom: 2px white solid;
+  border-left: 2px white solid ;
+}
+.location-cell{
+  height: 30px;
+}
+.photo{
+  border-bottom: 0px white solid;
+  height: 125px;
+  width:125px ;
+}
+
+.photo-cell{
+  border-bottom: 0px white solid;
+  height: 135px;
+}
+
+img{
+    padding: 5px;
+    vertical-align: middle;
+} 
+
+.img-country{
+  width:50px ;
+  height:20px;
+}
+
+.fieldHeadings{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+}
+
+
+.button {
+  border: none;
+  color: rgb(14, 13, 13);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-container{
+  text-align: center;  
+}
+
+.fieldset{
+  width: 98.7%;
+  display: grid;
+  grid: auto auto / auto auto auto auto;
+  grid-gap: 30px;
+  padding: 10px;
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+}
+
+.footer{
+  text-align : center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size: small;
+}
+.footer > p{
+  line-height:2px;
+}
