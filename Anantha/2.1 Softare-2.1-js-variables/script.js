@@ -8,6 +8,29 @@ let passingGrade = 80;
 //1.Create a variable called average that computes for the average from grade1 to grade4
 const avg = (grade1 + grade2 + grade3 + grade4)/4;
 console.log("Average of Grades:",avg);
+console.log("Using reducer", (() => {const array = [grade1,grade2,grade3,grade4]; return  array.reduce((x,y) => x+y)/array.length})());
+
+//Using function
+function average(array) {
+    // if(!Array.isArray(array))
+    // {
+    //     return -1;
+    // }
+
+    if(!(array instanceof Array))
+    {
+        return -1;
+    }
+    sum = 0;
+    array.forEach((element) => {
+      sum += element;
+    });
+    return sum / array.length;
+  }
+
+  console.log("Using function", average([grade1,grade2,grade3,grade4]));
+
+
 
 //2. Change the value of studentLastName to "Newman" 
 console.log("Student Last Name, before re-assigning:", studentLastName);
