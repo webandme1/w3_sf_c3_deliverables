@@ -32,7 +32,7 @@ else
 
 
 //Q3. Use a loop to print all the numbers from 1 to 100 that are divisible by 3 or 4.
-let number = 0;
+// let number = 0;
 // do{
 //     if(number % 3 == 0 || number % 4 == 0){
 //         console.log(`Number ${number} is divisible by 3 or 4`);
@@ -48,7 +48,7 @@ let number = 0;
 //     number += 1;
 // }
 
-for (number = 0; number <=100; number ++){
+for (let number = 0; number <=100; number ++){
     if(number % 3 == 0 || number % 4 == 0){
         console.log(`Number ${number} is divisible by 3 or 4`);
     }
