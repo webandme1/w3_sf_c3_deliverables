@@ -6,17 +6,9 @@
 
 This lab provides an opportunity to practice defining, accessing and manipulating arrays.
 
-> **Note:** Feel free to reference the arrays lesson, collaborate, google, etc.
-
 ## Setup & Instructions
 
-Create a new HTML/CSS/JS repl on [repl.it](https://repl.it) for these exercises.
-
-Title your repl **JS Array Lab**.
-
-Copy the exercises below into the repl's **script.js** file and code away!
-
-This lab is **a DELIVERABLE**. When completed, submit the link to your repl to your instructors.
+Create a folder called JS Arrays Assignment. Create an index.html, style.css & script.js file. Copy and paste the prompts from below and solve the exercises in your script.js file.
 
 ## Exercise
 
@@ -30,7 +22,7 @@ Exercise 1:
 
 const foods = [];
 
-console.log('Exercise 1 Result:\n', foods);
+console.log("Exercise 1 Result:\n", foods);
 
 /*
 Exercise 2:
@@ -39,9 +31,7 @@ Exercise 2:
 
 // Complete Exercise 2 below...
 
-
-
-console.log('Exercise 2 Result:\n',  foods);
+console.log("Exercise 2 Result:\n", foods);
 
 /*
 Exercise 3:
@@ -50,9 +40,7 @@ Exercise 3:
 
 // Complete Exercise 3 below...
 
-
-
-console.log('Exercise 3 Result:\n', foods);
+console.log("Exercise 3 Result:\n", foods);
 
 /*
 Exercise 4:
@@ -61,9 +49,7 @@ Exercise 4:
 
 // Complete Exercise 4 below...
 
-
-
-console.log('Exercise 4 Result:\n', favFood);
+console.log("Exercise 4 Result:\n", favFood);
 
 /*
 Exercise 5:
@@ -72,9 +58,7 @@ Exercise 5:
 
 // Complete Exercise 5 below...
 
-
-
-console.log('Exercise 5 Result:\n', foods);
+console.log("Exercise 5 Result:\n", foods);
 
 /*
 Exercise 6:
@@ -83,9 +67,7 @@ Exercise 6:
 
 // Complete Exercise 6 below...
 
-
-
-console.log('Exercise 6 Result:\n', foods);
+console.log("Exercise 6 Result:\n", foods);
 
 /*
 Exercise 7:
@@ -95,9 +77,7 @@ Exercise 7:
 
 // Complete Exercise 7 below...
 
-
-
-console.log('Exercise 7 Result:\n', yummy);
+console.log("Exercise 7 Result:\n", yummy);
 
 /*
 Exercise 8:
@@ -106,9 +86,7 @@ Exercise 8:
 
 // Complete Exercise 8 below...
 
-
-
-console.log('Exercise 8 Result:\n', soyIdx);
+console.log("Exercise 8 Result:\n", soyIdx);
 
 /*
 Exercise 9:
@@ -118,9 +96,7 @@ Exercise 9:
 
 // Complete Exercise 9 below...
 
-
-
-console.log('Exercise 9 Result:\n', allFoods);
+console.log("Exercise 9 Result:\n", allFoods);
 
 /*
 Exercise 10:
@@ -129,9 +105,7 @@ Exercise 10:
 
 // Complete Exercise 10 below...
 
-
-
-console.log('Exercise 10 Result:\n', hasSoup);
+console.log("Exercise 10 Result:\n", hasSoup);
 
 /*
 Exercise 11:
@@ -143,9 +117,7 @@ const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 // Complete Exercise 11 below...
 
-
-
-console.log('Exercise 11 Result:\n', odds);
+console.log("Exercise 11 Result:\n", odds);
 
 /*
 Exercise 12:
@@ -157,12 +129,10 @@ Exercise 12:
 
 // Complete Exercise 12 below...
 
-
-
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+console.log("Exercise 12 Results:");
+console.log("  fizz:", fizz);
+console.log("  buzz:", buzz);
+console.log("  fizzbuzz:", fizzbuzz);
 
 /*
 Exercise 13:
@@ -171,17 +141,15 @@ Exercise 13:
 */
 
 const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
+  [100, 5, 23],
+  [15, 21, 72, 9],
+  [45, 66],
+  [7, 81, 90],
 ];
 
 // Complete Exercise 13 below...
 
-
-
-console.log('Exercise 13 Result:\n', numList);
+console.log("Exercise 13 Result:\n", numList);
 
 /*
 Exercise 14:
@@ -190,9 +158,7 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-
-
-console.log('Exercise 14 Result:\n', num);
+console.log("Exercise 14 Result:\n", num);
 
 /*
 Exercise 15:
@@ -202,16 +168,8 @@ Exercise 15:
 
 // Complete Exercise 15 below...
 
-
-
-console.log('Exercise 15 Result:\n', total);
+console.log("Exercise 15 Result:\n", total);
 ```
-
-## Solution
-
-Try not to peek!
-
-[Solution Repl](https://repl.it/@jim_clark/JS-Arrays-Lab) 
 
 ## Additional Resources
 
