@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <script defer src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/472d8ac0d7.js" crossorigin="anonymous"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="m-3">
+    <form id="frm">
+        <h1>Let's Play Tic Tac Toe</h1>
+        <div id="kyc">
+          <fieldset class="fieldset">
+            <legend>Before we begin!!</legend>
+              <div class="form-check-label">How do you want me to call you?</div>
+              <div class="mb-4">
+                <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name">
+              </div>
+              <div class="form-check-label">Choose between</div>
+              <div class="form-switch">
+                  <input class="form-check-input btn btn-warning" type="radio" name="piece" id="piece1" value="X">
+                  <label class="form-check-label ps-2" for="piece1">
+                    X
+                  </label>
+               </div>
+               <div class="mb-4 form-switch">   
+                  <input class="form-check-input btn btn-warning" type="radio" name="piece" id="piece2" value="O" checked>
+                  <label class="form-check-label ps-2" for="piece2">
+                    O
+                  </label>
+              </div>
+              <div class="form-check-label">
+                Who will start the game?
+              </div>
+              <div class="form-switch">
+                <input class="form-check-input btn btn-warning"  type="radio" name="whostarts" id="whostarts1" value="P">
+                <label class="form-check-label ps-2" for="whostarts1">
+                  Me  <span class="pe-5"><i class="fa-solid fa-user-ninja"></i></span>
+                </label>
+              </div>
+              <div class="mb-4 form-switch">
+                <input class="form-check-input btn btn-warning"  type="radio" name="whostarts" id="whostarts2" value="C" checked>
+                <label class="form-check-label ps-2" for="whostarts2">
+                  You <span class="pe-5"><i class="fa-solid fa-user-astronaut"></i></span>
+                </label>
+              </div>
+              <div>
+                <input type="button" class="btn btn-primary" id="btnStart" value="Start">
+              </div>
+          </fieldset>
+      </div>
+    </form>
+    <div class="viewport-box" id="viewport-box">
+      <div class="box">
+          <div class="line-d-l-r" id="line-d-l-r"> </div>
+          <div class="line-t-l-r" id="line-t-l-r" > </div>
+          <div class="line-m-l-r" id="line-m-l-r"> </div>
+          <div class="line-b-l-r" id="line-b-l-r"> </div>
+          <div class="line-f-v" id="line-f-v"> </div>
+          <div class="line-s-v" id="line-s-v"> </div>
+          <div class="line-t-v" id="line-t-v"> </div>
+          <div class="grid-container" id="grid-container">
+              <div class="grid-item" id="11">&nbsp;</div>
+              <div class="grid-item" id="12">&nbsp;</div>
+              <div class="grid-item" id="13">&nbsp;</div>  
+              <div class="grid-item" id="21">&nbsp;</div>
+              <div class="grid-item" id="22">&nbsp;</div>
+              <div class="grid-item" id="23">&nbsp;</div>  
+              <div class="grid-item" id="31">&nbsp;</div>
+              <div class="grid-item" id="32">&nbsp;</div>
+              <div class="grid-item" id="33">&nbsp;</div>  
+          </div>
+          <div class="line-d-r-l" id="line-d-r-l"> </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+  body{
+    background-color: bisque;
+    color: brown;
+    /* font-family: 'Open Sans', sans-serif;
+    font-weight:500; */
+  }
+  h1{
+    color: black;
+    text-align: center;
+  }
+
+  /* .fieldset{
+    width: 98%;
+    display: grid;
+    grid: auto auto / auto auto auto auto;
+    grid-gap: 30px;
+    padding: 10px;
+    color: black;
+    font-family:'Open Sans', sans-serif;
+    font-weight:300;
+  } */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+
+    font-weight:800;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 29px;
+    font-size: 30px;
+    /* vertical-align: top; */
+    text-align: center;
+  }
+
+  .line-d-l-r{
+    width: calc(300px*1.45);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    transform: rotate(48deg);
+    transform-origin: left;
+    padding: 0%;
+    opacity: 0;
+  }
+
+  .line-d-r-l{
+    width: calc(300px*1.45);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    transform: rotate(-48deg);
+    transform-origin: left;
+    opacity: 0;
+
+  }
+
+
+  .line-t-l-r{
+    width: calc(300px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    top: 20%;
+    display: none;
+  }
+
+  .line-m-l-r{
+    width: calc(300px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    top: 55%;
+    display: none;
+  }
+
+
+  .line-b-l-r{
+    width: calc(300px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    top: 90%;
+    display: none;
+  }
+
+  .line-f-v{
+    width: calc(330px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    left: 20%;
+    display: none;
+  }
+
+  .line-s-v{
+    width: calc(330px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    left: 53%;
+    display: none;
+  }
+
+  .line-t-v{
+    width: calc(330px);
+    border-bottom: 3px solid rgb(1, 68, 12);
+    padding: 0%;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    left: 81%;
+    display: none;
+  }
+
+  .box{
+    width: 300px;
+    height: 300px;
+    /* border: 5px solid rgb(33, 202, 64); */
+  }
+
+  .viewport-box{
+    /* border: red 2px solid; */
+    vertical-align: middle;
+    position: absolute;
+    top: 28%;
+    left: 40%;
+  }
+
