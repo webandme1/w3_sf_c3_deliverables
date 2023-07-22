@@ -1,6 +1,8 @@
 const initializeGame = (() =>{
     document.getElementById('kyc').style.display="inline";
     document.getElementById('viewport-box').style.display="none";
+    document.getElementById('restart-play-area').style.display="none";
+    document.getElementById('restartGame').addEventListener('click',restartGame);
 })();
 
 const player1 = {piece:'0',name:"You", playfirst:false};  // A Player
@@ -11,6 +13,7 @@ let player;
 const startTheGame = () =>{
     document.getElementById('kyc').style.display="none";
     document.getElementById('viewport-box').style.display="inline";
+    document.getElementById('restart-play-area').style.display="inline";
     
     //Fill the values
     const whoWillStartTheGame = document.getElementById('whostarts1').checked;
@@ -67,9 +70,29 @@ winsWhen:new Map([
 ]),
 playerMoves:[],
 computerMoves:[],
-hasWon:false
+hasWon:false,
+reset:function(){
+    this.computer={},
+    this.player={};
+    this.playerMoves=[];
+    this.computerMoves=[];
+    this.hasWon=false;
+}
 };
 
+function restartGame(){
+    game.reset();
+   
+    let alldivs = document.getElementsByClassName('grid-item');
+    for (let i = 0; i < alldivs.length; i++) {
+        alldivs[i].innerHTML = "&nbsp;";
+    }
+
+    game.winsWhen.forEach( (v,k) => {
+             document.getElementById(k).style.opacity = "0" ;
+    });
+    startTheGame();
+}
 
 
 // Utility Functions *********************************************************************************************
@@ -198,14 +221,8 @@ function updateGameStatus(status,who){
             alert(`${playerName} wins!!!`);
         }
         game.hasWon=true;
-        if(status[1].indexOf("line-d-")!=-1)
-        {
-            document.getElementById(status[1]).style.opacity = 1;
-        }
-        else
-        {
-            document.getElementById(status[1]).style.display="inline";
-        }
+        document.getElementById(status[1]).style.opacity = 1;
+       
     }
     else if(status!=null && status[0]==false &&  totalMovesSoFar == 9){
         alert("Game tied!!")
