@@ -62,7 +62,7 @@
     padding: 0%;
     position: absolute;
     top: 22%;
-    display: none;
+    opacity:0;
   }
 
   .line-m-l-r{
@@ -71,7 +71,7 @@
     padding: 0%;
     position: absolute;
     top: 56%;
-    display: none;
+    opacity:0;
   }
 
 
@@ -81,7 +81,7 @@
     padding: 0%;
     position: absolute;
     top: 91%;
-    display: none;
+    opacity:0;
   }
 
   .line-f-v{
@@ -92,7 +92,7 @@
     transform: rotate(90deg);
     transform-origin: left;
     left: 19%;
-    display: none;
+    opacity:0;
   }
 
   .line-s-v{
@@ -103,7 +103,7 @@
     transform: rotate(90deg);
     transform-origin: left;
     left: 50%;
-    display: none;
+    opacity:0;
   }
 
   .line-t-v{
@@ -114,7 +114,7 @@
     transform: rotate(90deg);
     transform-origin: left;
     left: 82%;
-    display: none;
+    opacity:0;
   }
 
   .box{
@@ -129,5 +129,14 @@
     position: absolute;
     top: 28%;
     left: 40%;
+  }
+
+  .restart-play-area{
+    top: 75%;
+    left: 48.5%;
+    position: absolute;
+  }
+  a{
+    font-size: xx-large;
   }
 
