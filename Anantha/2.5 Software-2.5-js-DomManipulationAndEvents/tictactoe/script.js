@@ -3,8 +3,8 @@ const initializeGame = (() =>{
     document.getElementById('viewport-box').style.display="none";
 })();
 
-const player1 = {piece:'0',name:"Anantha", chosen:true, playfirst:false};
-const player2 = {piece:'X',name:"Computer", chosen:false, playfirst:true};
+const player1 = {piece:'0',name:"You", playfirst:false};  // A Player
+const player2 = {piece:'X',name:"Computer", playfirst:true}; //Computer
 let comp;
 let player;
 
@@ -12,10 +12,43 @@ const startTheGame = () =>{
     document.getElementById('kyc').style.display="none";
     document.getElementById('viewport-box').style.display="inline";
     
+    //Fill the values
+    const whoWillStartTheGame = document.getElementById('whostarts1').checked;
+    if(whoWillStartTheGame){
+        player1.playfirst = false;
+        player2.playfirst = true;
+    }
+    else
+    {
+        player1.playfirst = true;
+        player2.playfirst = false;
+    }
+    const nameOfPlayer = document.getElementById('name').value;
+    // console.log(nameOfPlayer);
+    if (nameOfPlayer.trim() != "")
+    {
+        player1.name = nameOfPlayer;
+    }  
+    const pieceXselected = document.getElementById('piece1').checked;
+    // console.log(pieceXselected);
+    if(pieceXselected){
+        player1.piece = "X";
+        player2.piece = "0";
+    }
+    else
+    {
+        player1.piece = "0";
+        player2.piece = "X";
+    }
+
     //initialize player1 and player2
     game.computer = player2;
     game.player = player1;
-    playFirstMove();
+
+    if(player2.playfirst)
+    {
+        playFirstMove();
+    }
 }
 document.getElementById('btnStart').addEventListener("click",startTheGame);
 
@@ -57,28 +90,30 @@ function getRandomCell() {
 
 
 // Gaming Functions *********************************************************************************************
-
+function TotalMovesPerformedInTheGameSoFar(){
+    return game.computerMoves?.length + game.playerMoves?.length;
+}
 //Let computer make the first move ##################################
 const playFromComputer = () => {
     let totalMoves=0;
-    totalMoves = game.computerMoves?.length + game.computerMoves?.length;
+    totalMoves = TotalMovesPerformedInTheGameSoFar() ;
     let computeMoveHappened=false;
     let cellref="";
     do {
             cellref = getRandomCell();   
-            if( game.hasWon == false && cellref!="" && totalMoves<9 && (game.computer.playfirst && (game.playerMoves?.length == 0 || game.computerMoves?.length == 0 ||  moveExists(cellref)==false)))
+            if( game.hasWon == false && cellref!="" && totalMoves<9 && (game.playerMoves!=null && (game.playerMoves?.length == 0 || game.computerMoves?.length == 0 ||  moveExists(cellref)==false)))
             {
                 computeMoveHappened = true;
 
-                // var t =  setTimeout(function() {
+                var t =  setTimeout(function() {
                     // The setTimeout() is executed only once. If you need repeated executions, use setInterval() instead.
-                    console.log(cellref);
-                    console.log(game.computer.piece);
+                    // console.log(cellref);
+                    // console.log(game.computer.piece);
                     document.getElementById(cellref).innerHTML = game.computer.piece;
-                    game.computerMoves.push(cellref);
-                    let ifwon = hasWon('c'); 
-                    updateGameStatus(ifwon,'c');
-                // },1000);
+                },1000);
+                game.computerMoves.push(cellref);
+                let ifwon = hasWon('c'); 
+                updateGameStatus(ifwon,'c');
             }
             else if(totalMoves == 9 || game.hasWon == true)
             {
@@ -99,7 +134,7 @@ const playFirstMove = () => {
 //Let computer make the first move ##################################
 
 function moveExists(cellref){
-    if( (game.playerMoves!=null && game.playerMoves.includes(cellref)==false) && (game.computerMoves!=null && game.computerMoves.includes(cellref)==false) )
+    if( ( game.playerMoves!=null && game.playerMoves.includes(cellref)==false) && (game.computerMoves!=null && game.computerMoves.includes(cellref)==false) )
     {
         return false;
     }
@@ -109,12 +144,13 @@ function moveExists(cellref){
     }
 }
 
+let playerFirstMoveCompleted = false;
+
 //Event based triggers
 const playSubsequentMoves = (event) =>{
     //console.dir(event);
     let invalidMove=false;
-
-    
+        
     if(game.hasWon == false && ((game.playerMoves?.length == 0 && game.computerMoves?.length == 0) || moveExists(event.target.id)==false))
     {
         document.getElementById(event.target.id).innerHTML = game.player.piece;
@@ -137,6 +173,7 @@ document.getElementById('grid-container').addEventListener("click",playSubsequen
 
 function updateGameStatus(status,who){
     let playerName="";
+    let totalMovesSoFar = TotalMovesPerformedInTheGameSoFar();
     if(status!=null && status[0]==true)
     {
         if(who == 'p')
@@ -152,8 +189,14 @@ function updateGameStatus(status,who){
             //Must never come here
             playerName = "N.A"
         }
-        
-        alert(`${playerName} has won!!!`);
+        if(playerName == "You")
+        {
+            alert(`You win!!!`);
+        }
+        else
+        {
+            alert(`${playerName} wins!!!`);
+        }
         game.hasWon=true;
         if(status[1].indexOf("line-d-")!=-1)
         {
@@ -164,10 +207,14 @@ function updateGameStatus(status,who){
             document.getElementById(status[1]).style.display="inline";
         }
     }
+    else if(status!=null && status[0]==false &&  totalMovesSoFar == 9){
+        alert("Game tied!!")
+    }
 }
 function hasWon(who){
     let matchCount=0;
     let status;
+    let toCheckWins=false;
     if(who == 'p' &&  game.playerMoves.length >= 3 )
     {
         game.winsWhen.forEach((value_winsWhen, key_winsWhen) => {
@@ -178,9 +225,16 @@ function hasWon(who){
                     matchCount += 1;
                 }
             });
-            if(matchCount==3 && status == null)
+            if(matchCount==3 && toCheckWins == false)
             {
+                // When P wins
                 status =  [true, key_winsWhen];
+                toCheckWins = true;
+            }
+            else if(toCheckWins == false)
+            {
+                // When no one has won
+                status = [false,""];
             }
         });
     }
@@ -194,15 +248,22 @@ function hasWon(who){
                     matchCount += 1;
                 }
             });
-            if(matchCount==3 && status == null)
+            if(matchCount==3 && toCheckWins == false)
             {
+                //When C Wins
                 status = [true, keyc_winsWhen];
+                toCheckWins = true;
+            }
+            else if(toCheckWins == false)
+            {
+                // When no one has won yet
+                status = [false,""];
             }
         });
     }
     else
     {
-        //Must never come here
+        //When total moves performeed by any player is less than 3
         status = [false,""];
     }
     return status;
