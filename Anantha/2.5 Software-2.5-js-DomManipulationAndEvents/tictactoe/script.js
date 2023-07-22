@@ -70,7 +70,7 @@ const playFromComputer = () => {
             {
                 computeMoveHappened = true;
 
-                // var t =  setTimeout(function() {
+                var t =  setTimeout(function() {
                     // The setTimeout() is executed only once. If you need repeated executions, use setInterval() instead.
                     console.log(cellref);
                     console.log(game.computer.piece);
@@ -78,7 +78,7 @@ const playFromComputer = () => {
                     game.computerMoves.push(cellref);
                     let ifwon = hasWon('c'); 
                     updateGameStatus(ifwon,'c');
-                // },1000);
+                },1000);
             }
             else if(totalMoves == 9 || game.hasWon == true)
             {
