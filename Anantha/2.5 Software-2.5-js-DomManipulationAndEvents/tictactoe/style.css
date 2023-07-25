@@ -61,8 +61,8 @@
     border-bottom: 3px solid rgb(1, 68, 12);
     padding: 0%;
     position: absolute;
-    top: 20%;
-    display: none;
+    top: 22%;
+    opacity:0;
   }
 
   .line-m-l-r{
@@ -70,8 +70,8 @@
     border-bottom: 3px solid rgb(1, 68, 12);
     padding: 0%;
     position: absolute;
-    top: 55%;
-    display: none;
+    top: 56%;
+    opacity:0;
   }
 
 
@@ -80,8 +80,8 @@
     border-bottom: 3px solid rgb(1, 68, 12);
     padding: 0%;
     position: absolute;
-    top: 90%;
-    display: none;
+    top: 91%;
+    opacity:0;
   }
 
   .line-f-v{
@@ -91,8 +91,8 @@
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
-    left: 20%;
-    display: none;
+    left: 19%;
+    opacity:0;
   }
 
   .line-s-v{
@@ -102,8 +102,8 @@
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
-    left: 53%;
-    display: none;
+    left: 50%;
+    opacity:0;
   }
 
   .line-t-v{
@@ -113,8 +113,8 @@
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
-    left: 81%;
-    display: none;
+    left: 82%;
+    opacity:0;
   }
 
   .box{
@@ -129,5 +129,14 @@
     position: absolute;
     top: 28%;
     left: 40%;
+  }
+
+  .restart-play-area{
+    top: 75%;
+    left: 48.5%;
+    position: absolute;
+  }
+  a{
+    font-size: xx-large;
   }
 

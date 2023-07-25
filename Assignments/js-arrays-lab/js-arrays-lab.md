@@ -31,7 +31,7 @@ Exercise 2:
 
 // Complete Exercise 2 below...
 
-console.log("Exercise 2 Result:\n", foods);
+console.log(foods.push('pizza','cheeseburger'));
 
 /*
 Exercise 3:
@@ -40,7 +40,8 @@ Exercise 3:
 
 // Complete Exercise 3 below...
 
-console.log("Exercise 3 Result:\n", foods);
+console.log(foods.unshift('taco'));
+
 
 /*
 Exercise 4:
@@ -49,7 +50,7 @@ Exercise 4:
 
 // Complete Exercise 4 below...
 
-console.log("Exercise 4 Result:\n", favFood);
+console.log(foods[1]='favFood');
 
 /*
 Exercise 5:
@@ -58,7 +59,7 @@ Exercise 5:
 
 // Complete Exercise 5 below...
 
-console.log("Exercise 5 Result:\n", foods);
+console.log(foods.splice(2,0,'tofu'))
 
 /*
 Exercise 6:
@@ -67,7 +68,7 @@ Exercise 6:
 
 // Complete Exercise 6 below...
 
-console.log("Exercise 6 Result:\n", foods);
+console.log(foods[1]='sushi','cupcake')
 
 /*
 Exercise 7:
@@ -77,7 +78,8 @@ Exercise 7:
 
 // Complete Exercise 7 below...
 
-console.log("Exercise 7 Result:\n", yummy);
+const yummy = (foods.slice(1,3))
+
 
 /*
 Exercise 8:
@@ -86,7 +88,9 @@ Exercise 8:
 
 // Complete Exercise 8 below...
 
-console.log("Exercise 8 Result:\n", soyIdx);
+let index = foods.indexof('tofu'){
+console.log(soyIdx)}
+
 
 /*
 Exercise 9:
@@ -96,7 +100,9 @@ Exercise 9:
 
 // Complete Exercise 9 below...
 
-console.log("Exercise 9 Result:\n", allFoods);
+let allFoods = (foods.length(5)){
+console.log(allFoods)}
+
 
 /*
 Exercise 10:
@@ -105,7 +111,9 @@ Exercise 10:
 
 // Complete Exercise 10 below...
 
-console.log("Exercise 10 Result:\n", hasSoup);
+Let result = foods.includes('soup;){
+console.log(result)}
+
 
 /*
 Exercise 11:
