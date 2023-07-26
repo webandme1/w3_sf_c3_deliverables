@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    color: coral;
+    font-size: x-large;
+}
+
+h2{
+    text-align: center;
+    color:chocolate;
+    font-size: medium;
+}
+.form-label{
+    color:chocolate;
+}
+body{
+    background-color: floralwhite;
+}
+#guessedNumbers{
+    display: none;
+}
+.card-footer{
+    background-color: aliceblue;
+}
+#form-area{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#intro{
+    text-align: center;
+    height: 50vh;
+    position: relative;
+    top:20vh;
+    /* border: red solid 1px; */
+
+}
+.btn-outline-primary{
+    color: burlywood;
+    border: burlywood solid 1px ;
+}
