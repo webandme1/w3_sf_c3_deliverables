@@ -1,0 +1,55 @@
+/* Move your styles here when you're ready to clean up your HTML file */
+/* Don't forget to link to this file in your HTML, otherwise your styles won't show up! */
+html{
+    font-size:large;
+    font-family: 'Garamond';
+}
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    border-bottom: 2px solid red;
+}
+
+.class-list{
+    list-style-type:square;
+}
+
+.item{
+    border-bottom: 1px solid purple;
+}
+
+.even{
+    background-color:lightgray;
+}
+
+.odd{
+    background-color: black;
+    color: white;
+}
+
+#item1{
+    font: size 30px;
+}
+#item2{
+    text-align:right;
+}
+ol > li:nth-child(1), ol > li:nth-child(2){
+    padding:2px;
+    background-color: lightgray;
+}
+
+ol > li:nth-child(odd){
+    background-color: lightgreen;
+}
+a[title="Bitmaker"]:hover{
+    text-decoration: none;
+}
+
+ul>li>a:hover{
+    background-color: yellow;
+}
+ul>li>a:active{
+    background-color: red;
+    color: yellow;
+}
