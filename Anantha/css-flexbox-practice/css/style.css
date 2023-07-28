@@ -1,0 +1,122 @@
+.flex-container{
+    display: flex;
+    /* border: rgb(24, 23, 23) solid 2px; */
+    align-content:center;
+    width: 55%;
+    height: 40%;
+    justify-content:center;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    left: 20%;
+}
+
+/* .flex-container div{
+    padding: 10px 0; 
+    text-align: center;
+} */
+
+.flex-item-left{
+    flex: 5%;
+    display: flex;
+    /* background-color: azure; */
+    justify-content: flex-end;
+    align-items:center;
+}
+/* .flex-item-left > div{ */
+    /* line-height:200px; */
+    /* border: rgb(240, 14, 14) solid 2px; */
+/* } */
+
+.flex-item-right{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(159, 204, 165); */
+    justify-content: center;
+    flex: 95%;
+}
+
+/* .flex-item-right > div{ */
+    /* margin: 5px;
+    padding: 10px; */
+    /* line-height:100px;  */
+    /* background-color: beige; */
+    /* border: rgb(82, 20, 199) solid 2px; */
+/* } */
+
+#img1{
+    height:60px;
+    opacity: 0.4;
+}
+#img2{
+    height:300px;
+    width:600px;
+}
+
+#img3{
+    height:200px;
+    width:200px;
+}
+#img4{
+    height:200px;
+    width:200px;
+}
+#img5{
+    height:200px;
+    width:200px;
+}
+
+#img6{
+    height:200px;
+    width:300px;
+}
+#img7{
+    height:200px;
+    width:300px;
+}
+
+.flex-item-top > div{
+    /* height:100px; */
+    background-image: url('./images/img/main-boots.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-item-top{
+    display: flex;
+}
+
+.flex-item-top > div{
+    width:100%;
+    /* border: rgb(47, 49, 3) solid 2px; */
+    text-align:center;
+    margin: 5px;
+    /* padding: 10px; */
+}
+
+
+.flex-item-middle{
+    display: flex;
+}
+.flex-item-middle > div{
+    width:33%;
+    /* border: rgb(47, 49, 3) solid 2px; */
+    text-align:center;
+    margin: 5px;
+    /* padding: 10px; */
+}
+
+
+.flex-item-bottom{
+    display: flex;
+}
+.flex-item-bottom > div{
+    width:50%;
+    /* border: rgb(47, 49, 3) solid 2px; */
+    text-align:center;
+    margin: 5px;
+    /* padding: 10px; */
+}
