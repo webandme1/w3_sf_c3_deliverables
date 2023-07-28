@@ -1,0 +1,13 @@
+/* h1{
+    text-align: center;
+    background-color:rgba(var(--bs-secondary-bg-rgb), .5) ;
+    color: rgba(var(--bs-tertiary-bg-rgb), .1);
+} */
+/* html{
+    background-color: rgba(var(--bs-body-color-rgb), 1);
+    color: rgba(var(--bs-tertiary-bg-rgb), .1);
+} */
+
+h1{
+    text-align: center;
+}
