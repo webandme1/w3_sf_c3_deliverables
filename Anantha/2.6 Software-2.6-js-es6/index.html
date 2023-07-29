@@ -14,6 +14,24 @@
 </head>
 <body class="fs-5 fw-semibold">
     <h1 class="text-white bg-black">JS ES6</h1>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Solve Quadratic Equation</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Value of a cannot be zero and is required.
+            </div>
+            <div class="modal-footer">
+            <button type="button" id="btnClose" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <h2 class="text-bg-light text-black fs-5 mb-5 mt-5 p-3">Get roots for quadratic equation ax<sup>2</sup> +  bx + c = 0, a &ne; 0</h2>
 
@@ -41,7 +59,7 @@
         <span id="result"></span>
     </div>
     <button type="button" id="btnGetRoots" class="btn btn-dark">Get roots</button>
-
+    <!-- data-bs-toggle="modal" data-bs-target="#staticBackdrop" -->
     </div>
 </body>
 </html>
