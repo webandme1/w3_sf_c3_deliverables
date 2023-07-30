@@ -37,8 +37,7 @@ const solveQuadraticEquation = function (){
     }
     return{
         SetValueOfabc1 : setValueOfabc,
-        RootsOfQuadraticEquation : qe,
-        Discriminant : discriminant
+        RootsOfQuadraticEquation : qe
     }
 }
 
@@ -82,7 +81,7 @@ const GetRoots = (() => {
         }
        
         const roots = solveQE.RootsOfQuadraticEquation;
-        if(roots.discriminant)
+        if(roots.discriminantIsPositiveOrEqualToZero)
         {
             if(roots.roots.length > 0)
             {
@@ -92,10 +91,10 @@ const GetRoots = (() => {
             {
                 document.getElementById("result").innerText = "zero is the repeated root for the quadratic equation."; 
             }
-            else
-            {
-                document.getElementById("result").innerText = "Qudratic equation has no real roots.";
-            }
+        }
+        else
+        {
+            document.getElementById("result").innerText = "Qudratic equation has no real roots.";
         }
     }
     document.getElementById("btnGetRoots").addEventListener("click",findRoots);
