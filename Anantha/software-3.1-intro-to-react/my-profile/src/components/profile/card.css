@@ -1,0 +1,49 @@
+.rowBox{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight:bold;
+    text-align: center;
+    border: black 1px solid;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1{
+    width: 25%;
+    height:50px;
+    /* border:green solid 1px; */
+}
+.row2{
+    border-bottom: rgb(17, 16, 16) 2px solid;
+    width: 49.4%;
+    height: 50px;
+    align-self:flex-end;
+    /* border:green solid 1px; */
+    padding-top: 25px;
+}
+.row3{
+    width: 25%;
+    height:50px;
+    /* border:green solid 1px; */
+}
+.row4{
+    
+    /* border:green solid 1px; */
+    width: 10%;
+}
+.row5{
+    align-content: center;
+    /* border:green solid 1px; */
+    width: 79.4%;
+    align-self: center;
+    font-weight: 100;
+    font-size: medium;
+}
+.row6{
+    height: 70px;
+    /* border:green solid 1px; */
+    width: 10%;
+}

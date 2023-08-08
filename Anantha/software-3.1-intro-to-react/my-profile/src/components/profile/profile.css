@@ -1,0 +1,27 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.row-1{
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight:bolder;
+    text-align: center;
+}
+.row-2{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight:bolder;
+    text-align: center;
+}
+.rowCenter{
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight:bolder;
+}
+  
