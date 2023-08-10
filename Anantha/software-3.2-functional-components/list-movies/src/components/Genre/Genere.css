@@ -1,0 +1,16 @@
+.HeaderRow{
+    margin-left: 15px;
+    background-color: azure;
+    color: brown;
+    text-align:left;
+    margin-bottom: 30px;
+}
+.desciptionText{
+    text-align:center;
+    text-shadow: 2px 1px #ff0000;
+}
+details > div{
+    padding-left: 25px;
+    background-color: white;
+    color: black;
+}

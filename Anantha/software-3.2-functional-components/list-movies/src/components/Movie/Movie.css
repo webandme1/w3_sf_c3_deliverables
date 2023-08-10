@@ -1,0 +1,7 @@
+.Content{
+    display: flex;
+    column-gap: 10px;
+}
+.rowHeader{
+    font-weight: bolder;
+}
