@@ -1,0 +1,23 @@
+.parentContainer{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    /* border: yellow solid 2px; */
+    justify-content: center;
+}
+
+.childContainer{
+    background-color: aliceblue;
+    color:black;
+    border-radius: 10%;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-family: cursive;
+    margin: 15px;
+    opacity: 0.3;
+}
