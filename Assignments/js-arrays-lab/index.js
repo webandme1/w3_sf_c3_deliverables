@@ -1,6 +1,6 @@
 // Initialize the foods array
 let foods = [];
-console.log("Exercise 1 Result:\n", foods);
+
 // Add 'pizza' & 'cheeseburger' to the foods array
 foods.push('pizza', 'cheeseburger');
 console.log(foods);
@@ -85,3 +85,4 @@ numArrays.forEach(arr => {
     });
 });
 console.log("Exercise 15 Result:", total);
+console.log("Exercise 1 Result:\n", foods);
